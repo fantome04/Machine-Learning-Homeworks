@@ -18,8 +18,8 @@ jobs:
         run: |
           python - <<'PY'
           import urllib.request, zipfile, pathlib
-          url = "https://archive.ics.uci.edu/static/public/222/bank+marketing.zip"
-          zip_path = pathlib.Path("/tmp/bank_marketing.zip")
+          url = "https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional.zip"
+          zip_path = pathlib.Path("/tmp/bank-additional.zip")
           urllib.request.urlretrieve(url, zip_path)
           with zipfile.ZipFile(zip_path) as z:
               matches = [n for n in z.namelist() if n.endswith("bank-additional-full.csv")]
