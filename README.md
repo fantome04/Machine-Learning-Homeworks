@@ -11,30 +11,51 @@ A collection of university Machine Learning homework assignments implemented in 
 │   ├── MachineLearningModel.py
 │   ├── IrisDataset.csv
 │   └── Polynomial200.csv
+│
+├── Homework2/
+│   ├── datasets/
+│   │   ├── banknote_authentication.csv
+│   │   ├── heart_disease_cleveland.csv
+│   │   ├── housing-boston.csv
+│   │   └── secret_polynomial.csv
+│   ├── A2.ipynb
+│   ├── DecisionBoundary.py
+│   ├── ForwardSelection.py
+│   ├── MachineLearningModel.py
+│   └── ROCAnalysis.py
+│
 └── README.md
 ```
 
 ## Homework 1
 
-The first assignment focuses on implementing and experimenting with basic machine learning models.
+Homework 1 focuses on nearest-neighbor methods.
 
-The provided Python module defines a common abstract interface for machine learning models and includes:
+Main topics:
 
-- K-Nearest Neighbors regression;
-- K-Nearest Neighbors classification;
-- a faster KNN classifier using a KD-tree;
-- model fitting, prediction, and evaluation methods.
+- K-Nearest Neighbors regression
+- K-Nearest Neighbors classification
+- Euclidean distance
+- KD-tree based nearest-neighbor search
+- Model evaluation
 
-The notebook uses the accompanying datasets for experiments and analysis.
+## Homework 2
 
-### Files
+Homework 2 covers regression, classification, feature selection, evaluation, and neural networks.
 
-| File | Description |
-|---|---|
-| `A1.ipynb` | Jupyter Notebook containing the Homework 1 experiments and analysis |
-| `MachineLearningModel.py` | Machine learning model implementations |
-| `IrisDataset.csv` | Dataset used for classification experiments |
-| `Polynomial200.csv` | Dataset used for regression experiments |
+Main topics include:
+
+- polynomial regression with the normal equation;
+- gradient descent;
+- feature normalization;
+- logistic regression;
+- nonlinear logistic regression;
+- decision boundary visualization;
+- ROC-related metrics and F-score;
+- forward feature selection;
+- multilayer perceptron classification.
+
+The datasets used by Homework 2 are stored separately under `Homework2/datasets/`.
 
 ## Technologies
 
@@ -42,17 +63,9 @@ The notebook uses the accompanying datasets for experiments and analysis.
 - Jupyter Notebook
 - NumPy
 - SciPy
-- KDTree
-
-## Topics
-
-- K-Nearest Neighbors
-- Regression
-- Classification
-- Euclidean distance
-- Model evaluation
-- KD-tree based nearest-neighbor search
+- Matplotlib
+- scikit-learn
 
 ## Purpose
 
-This repository contains my Machine Learning coursework and will be expanded with additional homework assignments over time.
+This repository contains my Machine Learning coursework and is organized by assignment, with supporting datasets kept inside each homework folder.
