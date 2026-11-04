@@ -22,8 +22,10 @@ jobs:
           zip_path = pathlib.Path("/tmp/bank_marketing.zip")
           urllib.request.urlretrieve(url, zip_path)
           with zipfile.ZipFile(zip_path) as z:
-              target = "bank-additional/bank-additional-full.csv"
-              data = z.read(target)
+              matches = [n for n in z.namelist() if n.endswith("bank-additional-full.csv")]
+              if not matches:
+                  raise RuntimeError("bank-additional-full.csv not found in archive")
+              data = z.read(matches[0])
           out = pathlib.Path("Homework3/dataset/BankMarketing/bank-additional-full.csv")
           out.parent.mkdir(parents=True, exist_ok=True)
           out.write_bytes(data)
