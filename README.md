@@ -24,6 +24,17 @@ A collection of university Machine Learning homework assignments implemented in 
 │   ├── MachineLearningModel.py
 │   └── ROCAnalysis.py
 │
+├── Homework3/
+│   ├── dataset/
+│   │   ├── BankMarketing/
+│   │   │   ├── bank-additional-full.csv
+│   │   │   └── bank-additional-names.txt
+│   │   └── your_dataset/
+│   │       ├── concrete_data.csv
+│   │       ├── telemonitoring_parkinsons_updrs.data.csv
+│   │       └── WineQT.csv
+│   └── A3.ipynb
+│
 └── README.md
 ```
 
@@ -41,21 +52,26 @@ Main topics:
 
 ## Homework 2
 
-Homework 2 covers regression, classification, feature selection, evaluation, and neural networks.
+Homework 2 covers regression, classification, feature selection, and evaluation.
 
 Main topics include:
 
 - polynomial regression with the normal equation;
 - gradient descent;
-- feature normalization;
 - logistic regression;
 - nonlinear logistic regression;
 - decision boundary visualization;
 - ROC-related metrics and F-score;
-- forward feature selection;
-- multilayer perceptron classification.
+- forward feature selection.
 
-The datasets used by Homework 2 are stored separately under `Homework2/datasets/`.
+## Homework 3
+
+Homework 3 uses multiple datasets organized into two groups:
+
+- `dataset/BankMarketing/` — the Bank Marketing dataset and its attribute description;
+- `dataset/your_dataset/` — the concrete strength, Parkinson's telemonitoring, and wine quality datasets.
+
+The assignment work is contained in `A3.ipynb`.
 
 ## Technologies
 
@@ -68,4 +84,4 @@ The datasets used by Homework 2 are stored separately under `Homework2/datasets/
 
 ## Purpose
 
-This repository contains my Machine Learning coursework and is organized by assignment, with supporting datasets kept inside each homework folder.
+This repository contains my Machine Learning coursework and is organized by assignment, with supporting datasets grouped inside each homework folder.
